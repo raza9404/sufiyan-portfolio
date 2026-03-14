@@ -67,30 +67,46 @@ export default function PortfolioFull() {
         </div>
       </section>
 
-      {/* 2. THE GENESIS (Origin Story) */}
-      <section id="genesis" className="py-24 border-t border-white/5 relative bg-[#050505]">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row gap-16 items-center">
-          <div className="md:w-1/2">
-            <h2 className="text-xs font-bold tracking-[0.25em] text-cyan-500 uppercase mb-4">The Origin</h2>
-            <h3 className="text-4xl md:text-5xl font-extrabold text-white mb-6 tracking-tight">Born in Nagpur. <br/>Engineered for the World.</h3>
-            <p className="text-zinc-400 leading-relaxed mb-6 text-lg">
-              Born on December 7th in the geographic center of India—Nagpur, Maharashtra. My journey wasn't about following traditional paths; it was about hacking them. From the very beginning, I was obsessed with how logic constructs reality and how design influences human psychology.
-            </p>
-            <p className="text-zinc-400 leading-relaxed text-lg">
-              This obsession led to a dual-core identity: a hardcore software architect by day, and a cinematic storyteller/musical artist by night. I don't just write code; I orchestrate it.
-            </p>
-          </div>
-          <div className="md:w-1/2 w-full">
-            <div className="relative rounded-3xl overflow-hidden border border-white/10 aspect-square md:aspect-[4/3] bg-[#111] group">
-              <div className="absolute inset-0 bg-gradient-to-br from-cyan-900/40 to-blue-900/40 opacity-50 group-hover:opacity-100 transition-opacity duration-700"></div>
-              {/* Optional: Add an abstract image or your photo here later */}
-              <div className="absolute inset-0 flex items-center justify-center">
-                <span className="text-zinc-800 text-6xl font-black tracking-tighter mix-blend-overlay">DEC 07</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+    {/* 2. THE GENESIS (Origin Story) */}
+<section id="genesis" className="py-24 border-t border-white/5 relative bg-[#050505]">
+  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row gap-16 items-center">
+    <div className="md:w-1/2">
+      <h2 className="text-xs font-bold tracking-[0.25em] text-cyan-500 uppercase mb-4">The Origin</h2>
+      <h3 className="text-4xl md:text-5xl font-extrabold text-white mb-6 tracking-tight">Born in Nagpur. <br/>Engineered for the World.</h3>
+      <p className="text-zinc-400 leading-relaxed mb-6 text-lg">
+        Born on December 7th in the geographic center of India—Nagpur. My journey wasn't about following traditional paths; it was about hacking them.
+      </p>
+      <p className="text-zinc-400 leading-relaxed text-lg">
+        From cinematic storytelling to architecting scalable code, I orchestrate digital experiences that leave a lasting impact.
+      </p>
+    </div>
+
+    {/* Image Grid with CSS Color Grading */}
+    <div className="md:w-1/2 grid grid-cols-2 gap-4">
+      {/* Img 1: Main Large Photo (Expo) */}
+      <div className="relative rounded-2xl overflow-hidden border border-white/10 col-span-2 aspect-[16/9] group">
+        <img 
+          src="/img1.webp" 
+          alt="Sufiyan at Expo" 
+          className="w-full h-full object-cover transition-all duration-700 grayscale group-hover:grayscale-0 brightness-75 group-hover:brightness-100 scale-110 group-hover:scale-100" 
+        />
+        <div className="absolute inset-0 bg-cyan-900/20 mix-blend-overlay group-hover:bg-transparent transition-all"></div>
+      </div>
+
+      {/* Img 2: Working/Coding shot */}
+      <div className="relative rounded-2xl overflow-hidden border border-white/10 aspect-square group">
+        <img 
+          src="/img2.webp" 
+          alt="Sufiyan Coding" 
+          className="w-full h-full object-cover grayscale brightness-50 group-hover:grayscale-0 group-hover:brightness-100 transition-all duration-500" 
+        />
+        <div className="absolute inset-0 bg-blue-900/30 mix-blend-multiply group-hover:bg-transparent"></div>
+      </div>
+
+    
+    </div>
+  </div>
+</section>
 
       {/* 3. THE EXORBIS VISION (Startup Journey) */}
       <section id="exorbis" className="py-32 border-t border-white/5 relative bg-[#020202]">
